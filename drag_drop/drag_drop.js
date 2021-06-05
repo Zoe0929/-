@@ -6,7 +6,7 @@ allowDrop = function() {
     var _targetEle = event.target;
     var _id = event.dataTransfer.getData('text');
     var _moveEle = document.getElementById(_id );
-    _targetEle.before(_moveEle);
+    _targetEle.appendChild(_moveEle);
   };
   
   dragStart = function() {
@@ -20,3 +20,6 @@ allowDrop = function() {
     var _thisEle = event.target;
     _thisEle.classList.remove('is-dragging');
   };
+  
+
+  
