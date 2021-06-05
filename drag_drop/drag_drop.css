@@ -1,0 +1,23 @@
+.item {
+    background: #999;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+  }
+  .item.is-dragging {
+    background-color: red;
+  }
+  
+  .bucket {
+    display: block;
+    width: 200px;
+    height: 90px;
+    margin: 0 0 18px;
+    border: 1px solid;
+    text-align: center;
+    padding: 15px;
+  }

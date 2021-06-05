@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drag_drop.css">
+    <script src="drag_drop.js"></script>
+    <title>Drag & Drop</title>
+</head>
+<body>
+    <div class="test wrap">
+        <div class="drag-items">
+          <span class="item" id="1" ondragstart="dragStart(event);" draggable="true" ondragend="dragEnd(event)">1</span>
+          <span class="item" id="2" ondragstart="dragStart(event);" draggable="true" ondragend="dragEnd(event)">2</span>
+          <span class="item" id="3" ondragstart="dragStart(event);" draggable="true" ondragend="dragEnd(event)">3</span>
+        </div>
+        <div class="bucket" ondragover="allowDrop();" ondrop="dropItem(event);"></div>
+      </div>
+</body>
+</html>
